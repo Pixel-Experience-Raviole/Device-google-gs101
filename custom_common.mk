@@ -5,7 +5,7 @@
 #
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += device/google/gs101/overlay-lineage
+DEVICE_PACKAGE_OVERLAYS += device/google/gs101/overlay-custom
 
 # AiAi Config
 PRODUCT_COPY_FILES += \
@@ -22,10 +22,6 @@ PRODUCT_PRODUCT_PROPERTIES += ro.opa.eligible_device=true
 # EUICC
 PRODUCT_PACKAGES += \
     EuiccSupportPixelOverlay
-
-# Parts
-PRODUCT_PACKAGES += \
-    GoogleParts
 
 # Touch
 include hardware/google/pixel/touch/device.mk
